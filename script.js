@@ -1,7 +1,16 @@
-console.log("Javascript file loaded")
+    console.log("Javascript file loaded")
 
-displayQuestion();
-let questions = [
+    let questions = [
+    {
+        question: "What is your type of Music",
+        option1: "Pop",
+        option2: "R&B",
+        option3: "Hip-Hop",
+        option4: "Rap",
+        option5: "Rock",
+        option6: "Jazz",
+        option7: "Country",
+    },
     {
         question: "Whos your Favorite Female Artist?",
         option1: "Ariana Grande",
@@ -11,8 +20,6 @@ let questions = [
         option5: "Tate McRae",
         option6: "SZA",
         option7: "Other",
-
-
     },
     {
         question: "Whos your Favorite Male Artist?",
@@ -24,11 +31,6 @@ let questions = [
         option6: "Bad Bunny",
         option7: "Other",
     },
-    {
-        question: "What is your type of Music",
-        option1: "Pop",
-        option2: "R&B",
-    }
 ];
 
     // TODD: Declare an empty array that will hold the user's answer

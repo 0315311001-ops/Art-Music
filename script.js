@@ -1,5 +1,34 @@
     console.log("Javascript file loaded")
 
+    function displayQuestions() {
+        let currentQuestions = question[index];
+
+        // Display the questions
+        document.getElementById("question-text").innerText = currentQuestion.question;
+
+        // Display the options ( you'll need to create buttons or elemtens for these)
+    }
+
+    function selectAnswer(chosenQuestion) {
+        // Add the answer to userAnswers array
+        userAnswer.push(chosenOption);
+
+        // Move to next question
+        index = index + 1;
+
+        // Check if there are ore questions
+        if (index < questions.length) {
+            displayQuestion();
+        } else {
+            showResults();
+        }
+
+        function showResults() {
+            // This is where the "art" part happens!
+            console.log("User's music perference:" , userAnswers);
+        }
+1    }
+
     let questions = [
     {
         question: "What is your type of Music",

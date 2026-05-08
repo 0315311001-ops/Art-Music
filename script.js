@@ -27,6 +27,10 @@
             // This is where the "art" part happens!
             console.log("User's music perference:" , userAnswers);
         }
+
+        document.getElementById("option1").onclick = function() {
+            selectAnswer(currentQuestion.option1);
+        };
 1    }
 
     let questions = [

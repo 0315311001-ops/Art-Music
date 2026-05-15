@@ -1,7 +1,18 @@
     console.log("Javascript file loaded")
 
-    function displayQuestions() {
+    function selectAnswer(chosenOption) {
+        // Save the user's answer to the array
+        userAnswer.push(chosenOption);
         let currentQuestions = question[index];
+
+        // Move to the next question
+        index = index + 1;
+
+        // Check if there are more questions left
+        if (index < questions.length) {
+            displayQuestion();
+            
+        }
 
         // Display the questions
         document.getElementById("question-text").innerText = currentQuestion.question;
@@ -64,6 +75,18 @@
         option6: "Bad Bunny",
         option7: "Other",
     },
+
+    function selectAnswer() {
+        let onClick = questions [index];
+
+        // Display the question
+        document.getElementById("question-text").innerText = currentQuestion.question;
+
+        // Display all 7 options
+        document.getElementById("question-text").innerText = currentQuestion.question;
+
+    
+    }
 ];
 
     // TODD: Declare an empty array that will hold the user's answer
